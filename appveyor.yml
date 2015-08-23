@@ -28,11 +28,6 @@
   after_build:
   - md "src\build\nuget"
   - nuget pack "src\nuget\Radical.Windows.Presentation.Autofac.nuspec" -Version "%package_version%" -Properties "configuration=%CONFIGURATION%" -OutputDirectory "src\build\nuget"
-  test:
-    categories:
-      except:
-      - ObjectDumper
-      - AsyncWorker
   artifacts:
   - path: src\build\Debug
   - path: src\build\nuget\*.nupkg
@@ -70,10 +65,6 @@
   after_build:
   - md "src\build\nuget"
   - nuget pack "src\nuget\Radical.Windows.Presentation.Autofac.nuspec" -Version "%package_version%" -Properties "configuration=%CONFIGURATION%" -OutputDirectory "src\build\nuget"
-  test:
-    categories:
-      except:
-      - ObjectDumper
   artifacts:
   - path: src\build\Release
   - path: src\build\nuget\*.nupkg
