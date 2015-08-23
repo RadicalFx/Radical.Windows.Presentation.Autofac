@@ -110,9 +110,6 @@
     <Compile Include="..\..\net40\Radical.Windows.Presentation.Autofac\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="..\..\net40\Radical.Windows.Presentation.Autofac\Properties\NugetInfo.cs">
-      <Link>Properties\NugetInfo.cs</Link>
-    </Compile>
     <Compile Include="..\..\net40\Radical.Windows.Presentation.Autofac\Services\ComponentReleaser.cs">
       <Link>Services\ComponentReleaser.cs</Link>
     </Compile>
