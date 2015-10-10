@@ -93,7 +93,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Properties\NugetInfo.cs" />
     <Compile Include="Services\ComponentReleaser.cs" />
     <None Include="packages.config" />
     <AppDesigner Include="Properties\" />

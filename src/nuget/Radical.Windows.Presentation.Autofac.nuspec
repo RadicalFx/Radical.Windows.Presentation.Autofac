@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>Radical.Windows.Presentation.Autofac</id>
+        <title>Radical Windows Presentation Autofac</title>
+        <version>$version$</version>
+        <authors>Mauro Servienti, Enos Recanati, Michael Denny</authors>
+        <owners>radical,mauroservienti</owners>
+        <licenseUrl>https://github.com/RadicalFx/Radical.Windows.Presentation.Autofac/blob/develop/license.md</licenseUrl>
+        <projectUrl>https://github.com/RadicalFx/Radical.Windows.Presentation.Autofac</projectUrl>
+        <iconUrl>http://www.radicalframework.com/img/radical-ico.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Radical Framework for M-V-VM and UI Composition (Autofac Integration)</description>
+        <summary />
+        <language>en-US</language>
+        <tags>Radical Radical.Windows Autofac</tags>
+        <dependencies>
+            <dependency id="Radical.Windows.Presentation" version="1.0.6.0-RC3" />
+            <dependency id="Autofac" version="3.0.2" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\build\$configuration$\Radical.Windows.Presentation.Autofac\lib\" target="lib\" />
+    </files>
+</package>
