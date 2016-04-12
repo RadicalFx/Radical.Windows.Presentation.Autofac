@@ -8,18 +8,23 @@ using Topics.Radical.Windows.Presentation.ComponentModel;
 
 namespace Topics.Radical.Windows.Presentation.Services
 {
-	class ComponentReleaser : IReleaseComponents
-	{
-		readonly IContainer container;
+    class ComponentReleaser : IReleaseComponents
+    {
+        readonly IContainer container;
 
-		public ComponentReleaser( IContainer container )
-		{
-			this.container = container;
-		}
+        public ComponentReleaser( IContainer container )
+        {
+            this.container = container;
+        }
 
-		public void Release( object component )
-		{
-			//NOP
-		}
-	}
+        public void Release( object component )
+        {
+            //NOP
+            var disposable = component as IDisposable;
+            if(disposable != null)
+            {
+                disposable.Dispose();
+            }
+        }
+    }
 }
